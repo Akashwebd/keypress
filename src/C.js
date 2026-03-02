@@ -11,9 +11,9 @@ function C() {
     setKeyPressInfo((prev) => [...prev, item]);
 
     return () => {
-      setKeyPressInfo((prev) => prev.filter((it) => it != item));
+      setKeyPressInfo((prev) => prev.filter((it) => it !== item));
     };
-  }, []);
+  }, [setKeyPressInfo]);
 
   const shortCut = useMemo(
     () => [
