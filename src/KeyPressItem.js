@@ -22,7 +22,7 @@ function KeyPressItem({ children, shortCut = [] }) {
         listener.unregister_combo(keysToUnregister);
       }
     };
-  }, [listener, shortCut]); // Dependencies ensure fresh registration
+  }, [listener, shortCut]);
 
   return <div ref={domref}>{children}</div>;
 }
