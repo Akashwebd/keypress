@@ -7,7 +7,7 @@ function D() {
   const { setKeyPressInfo } = useKeyBoardContext();
 
   useEffect(() => {
-    let item = { type: "D", text: "Click D or press sht s" };
+    let item = { type: "D", text: "Click D or press Ctrl s" };
     setKeyPressInfo((prev) => [...prev, item]);
 
     return () => {
